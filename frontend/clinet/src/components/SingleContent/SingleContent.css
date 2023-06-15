@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 10px;
+  padding-bottom: 5px;
+
+  margin: 15px 0;
+  background-color: #385b38;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 22px 20px 19px rgb(17, 18, 17);
+}
+.main:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .main {
+    width: 46%;
+  }
+  .poster {
+    border-radius: 10px;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0;
+  }
+  .subtitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+    padding: 0 2px;
+    padding-bottom: 3px;
+  }
+}
+.link {
+  color: white;
+}

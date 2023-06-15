@@ -1,0 +1,101 @@
+.ContentModal__landscape {
+  object-fit: contain;
+  border-radius: 10px;
+}
+.r {
+  margin-top: 10px;
+}
+.ContentModal__portrait {
+  object-fit: contain;
+  border-radius: 10px;
+}
+.comment {
+  width: 80%;
+  height: 180px;
+  justify-content: center;
+  scrollbar-width: thin;
+}
+
+.a {
+  padding-left: 30%;
+  font-size: 20px;
+}
+.tagline {
+  padding-bottom: 8px;
+  margin-top: 15px;
+  align-self: center;
+}
+
+.ContentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.ContentModal::-webkit-scrollbar {
+  display: none;
+}
+
+.ContentModal__about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.ContentModal__title {
+  height: 12%;
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+.post {
+  width: 8%;
+  background: #1660ab;
+  border: 2px solid #243924;
+  color: #fff;
+  font-size: 2 rem;
+  justify-self: center;
+  padding: 0.9rem;
+  margin: 0.2rem 0;
+  margin-left: 72%;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.ContentModal__description {
+  display: flex;
+  height: 40%;
+  margin-top: 10px;
+  overflow-y: scroll;
+  padding: 18px;
+  border-radius: 20px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+}
+
+.ContentModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .ContentModal__portrait {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .ContentModal_title {
+    font-size: 1vw;
+  }
+}

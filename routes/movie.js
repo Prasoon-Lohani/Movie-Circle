@@ -17,7 +17,7 @@ router.get("/movie/get", async (req, res) => {
     res.redirect("/movie/list");
   });
 
-  router.get("/movie/list", async (req, res) => {
+  router.get("/list", async (req, res) => {
     const movieList = await Movie.find({});
 console.log(movieList)    ;
     // console.log("From List"+movieList);
